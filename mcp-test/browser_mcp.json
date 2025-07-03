@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "graphdb": {
+      "command": "node",
+      "args": [
+          "D:/Project/multi-agents-rag-cykg/mcp-server/mcp-graphdb/dist/index.js"
+      ],
+      "env": {
+        "GRAPHDB_ENDPOINT": "http://localhost:7200",
+        "GRAPHDB_REPOSITORY": "cykg-rag-1",
+        "GRAPHDB_USERNAME": "admin",
+        "GRAPHDB_PASSWORD": "admin"
+      }
+    }
+  }
+}
