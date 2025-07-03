@@ -23,7 +23,7 @@ The server code is included in the `mcp-server/mcp-graphdb/` directory of this p
 
 1.  **Clone this repository:**
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/HappyRehund/multi-agents-cyrag.git
     cd multi-agents-rag-cykg
     ```
 
