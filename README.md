@@ -14,7 +14,7 @@ The system uses a LangGraph-based agentic workflow to decide the best strategy f
 
 This project utilizes an external, open-source MCP server to connect the LangChain agent with the GraphDB instance.
 
--   **Repository:** [keonchennl/mcp-server-graphdb](https://github.com/keonchennl/mcp-server-graphdb)
+-   **Repository:** [keonchennl/mcp-server-graphdb](https://github.com/keonchennl/mcp-graphdb)
 -   **Description:** This server provides a read-only bridge to an Ontotext GraphDB repository, exposing tools like `sparqlQuery` and `listGraphs` to an MCP-compatible client.
 
 The server code is included in the `mcp-server/mcp-graphdb/` directory of this project. Full credit for this component goes to its original author.
@@ -23,16 +23,16 @@ The server code is included in the `mcp-server/mcp-graphdb/` directory of this p
 
 1.  **Clone this repository:**
     ```sh
-    git clone <your-repository-url>
-    cd multi-agents-rag-cykg
+    git clone https://github.com/HappyRehund/multi-agents-cyrag.git
+    cd multi-agents-cyrag
     ```
 
 2.  **Set up the MCP Server:**
     The `mcp-server-graphdb` is included as a submodule or a direct copy. You need to install its dependencies.
     ```sh
     cd mcp-server/mcp-graphdb
-    npm install
-    npm run build
+    yarn install
+    yarn build
     cd ../..
     ```
 
