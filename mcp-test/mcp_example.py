@@ -30,12 +30,18 @@ async def main():
     If after using the tools you cannot find an answer, you must state that you could not find the information in the database.
     NEVER provide an answer from memory.
     """
+    
+    query_1 = "can you tell me all the techniques under Initial Access?"
+    query_2 = "What are the techniques used for Privilege Escalation?"
+    query_3 = "Can you list all tactics that have more than 10 techniques?"
     # Buat agen
     agent = MCPAgent(llm=llm, client=client, max_steps=30,
-                     verbose=True, system_prompt=strict_system_prompt)
+                     verbose=True, 
+                     system_prompt=strict_system_prompt
+                     )
 
     # Jalankan kueri
-    result = await agent.run("What techniques are used for credential dumping on Windows systems?")
+    result = await agent.run(query_1)
     print(f"\nHasil: {result}")
 
 if __name__ == "__main__":
