@@ -1,3 +1,0 @@
-[submodule "mcp-server/mcp-graphdb"]
-	path = mcp-server/mcp-graphdb
-	url = https://github.com/keonchennl/mcp-graphdb.git

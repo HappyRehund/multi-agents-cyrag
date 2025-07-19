@@ -1,16 +1,18 @@
 {
   "mcpServers": {
-    "graphdb": {
-      "command": "node",
+    "mcp-graphdb": {
+      "command": "uvx",
       "args": [
-          "D:/Project/multi-agents-rag-cykg/mcp-server/mcp-graphdb/dist/index.js"
-      ],
-      "env": {
-        "GRAPHDB_ENDPOINT": "http://localhost:7200",
-        "GRAPHDB_REPOSITORY": "cykg-rag-1",
-        "GRAPHDB_USERNAME": "admin",
-        "GRAPHDB_PASSWORD": "admin"
-      }
+        "D:\\Project\\multi-agents-rag-cykg\\mcp-server\\mcp-graphdb-2",
+        "--db-url",
+        "http://localhost:7200/repositories/cykg-rag-1",
+        "--schema-file",
+        "D:\\Project\\multi-agents-rag-cykg\\mcp-server\\mcp-graphdb-2\\data\\attack_ics_ontology.ttl",
+        "--username",
+        "admin",
+        "--password",
+        "admin"
+      ]
     }
   }
 }

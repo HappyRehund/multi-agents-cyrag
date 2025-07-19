@@ -37,11 +37,12 @@ if __name__ == "__main__":
     query_1 = "Which MITRE ATT&CK techniques are used by attackers to escalate their privileges within a network?"
     query_2 = "Which malware are launched by lazarus group?"
     query_3 = "I'm preparing a threat briefing on evasive maneuvers. Can you list out the techniques that fall under the 'Evasion' tactic so I can compare them with what we're currently monitoring?"
+    query_4 = "Show 5 available tactics in the database"
     if len(sys.argv) > 1:
         input_query = " ".join(sys.argv[1:])
     else:
         # Default query if none is provided
-        input_query = query_3
+        input_query = query_4
 
     print(f"Executing agent with query: '{input_query}'")
     run_agent(input_query)
