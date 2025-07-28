@@ -1,18 +1,8 @@
 {
   "mcpServers": {
-    "mcp-graphdb": {
-      "command": "uvx",
-      "args": [
-        "D:\\Project\\multi-agents-rag-cykg\\mcp-server\\mcp-graphdb-2",
-        "--db-url",
-        "http://localhost:7200/repositories/cykg-rag-1",
-        "--schema-file",
-        "D:\\Project\\multi-agents-rag-cykg\\mcp-server\\mcp-graphdb-2\\data\\attack_ics_ontology.ttl",
-        "--username",
-        "admin",
-        "--password",
-        "admin"
-      ]
+    "rdf_explorer": {
+      "command": "D:\\Project\\github\\mcp-rdf-explorer\\venv\\Scripts\\python.exe",
+      "args": ["D:\\Project\\github\\mcp-rdf-explorer\\src\\mcp-rdf-explorer\\server.py", "--triple-file", "statements.ttl"]
     }
   }
 }
