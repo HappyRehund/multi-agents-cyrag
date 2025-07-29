@@ -5,11 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "hf-xet>=1.1.5",
     "ipykernel>=6.29.5",
     "ipython>=9.3.0",
     "langchain>=0.3.26",
     "langchain-community>=0.3.26",
     "langchain-core>=0.3.66",
+    "langchain-huggingface>=0.3.0",
     "langchain-neo4j>=0.4.0",
     "langchain-openai>=0.3.24",
     "langgraph>=0.4.8",
@@ -18,4 +20,5 @@ dependencies = [
     "pydantic>=2.11.7",
     "python-dotenv>=1.1.0",
     "rdflib>=7.1.4",
+    "sentence-transformers>=5.0.0",
 ]
