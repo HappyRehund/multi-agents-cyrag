@@ -46,3 +46,14 @@ NEO4J_AURA_DATABASE=
 GRAPHDB_PASSWORD=
 GRAPHDB_USERNAME=
 ```
+## Features
+
+- **multi-agents-with-log.ipynb**: This workflow combines Neo4j (Cypher) database graph-based search, vector search, log analysis, and automatic reflection to generate comprehensive answers to user questions regarding threats, attack techniques, mitigation, and suspicious activity in the system.
+
+- **multi-agents-without-log.ipynb** : This workflow combines Neo4j (Cypher) database graph-based search, vector search, and automatic reflection (without log analysis) to generate comprehensive answers to user questions related to attack techniques, mitigation, and threat intelligence.
+
+- **neo4j-cypher-query.ipynb** : MITRE ATT&CK-based cybersecurity knowledge search and analysis using Cypher query on Neo4j database.
+
+- **neo4j-log.ipynb** : Hybrid search that combines system log analysis and Neo4j graph knowledge for user activity investigation.
+
+- **neo4j-log.ipynb** : Neo4j vector and graph-based cybersecurity knowledge retrieval
